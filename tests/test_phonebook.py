@@ -5,8 +5,14 @@ from src.phonebook import Phonebook
 class PhoneBookTest(unittest.TestCase):
 
     # First contruct instance of unit under test which is Phonebook in setup
+    # Setup called before every test method
     def setUp(self):
         self.phonebook = Phonebook()
+
+    # Called after every test method. Do not need it at present but can be used
+    # to clear up after test.
+    # def tearDown(self):
+    #     pass
 
     def test_lookup_by_name(self):
         self.phonebook.add("Bob", "12345")

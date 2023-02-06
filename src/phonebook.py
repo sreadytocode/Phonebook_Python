@@ -9,3 +9,6 @@ class Phonebook:
     def lookup(self, name):
         # Name is in a dictionary numbers
         return self.numbers[name]
+
+    def is_consistent(self):
+        pass

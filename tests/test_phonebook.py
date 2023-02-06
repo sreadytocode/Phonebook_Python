@@ -25,7 +25,7 @@ class PhoneBookTest(unittest.TestCase):
             self.phonebook.lookup("missing")
 
 # Unit test skip so will skip test
-    @unittest.skip("WIP")
+    # @unittest.skip("WIP")
     def test_empty_phonebook_is_consistent(self):
     # Using assertTrue which means should return true for an empty phonebook
         self.assertTrue(self.phonebook.is_consistent())

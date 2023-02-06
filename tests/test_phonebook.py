@@ -30,4 +30,9 @@ class PhoneBookTest(unittest.TestCase):
     # Using assertTrue which means should return true for an empty phonebook
         self.assertTrue(self.phonebook.is_consistent())
 
+    def test_is_consistent_with_different_entries(self):
+        self.phonebook.add("Bob", "12345")
+        self.phonebook.add("Maya", "1389100")
+        self.assertTrue(self.phonebook.is_consistent())
+
 
